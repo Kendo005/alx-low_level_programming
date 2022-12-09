@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o cisfun $CFIlE 
+gcc -O Cisfun $CFIlE 
