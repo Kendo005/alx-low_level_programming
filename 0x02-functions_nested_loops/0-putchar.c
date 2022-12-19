@@ -1,22 +1,21 @@
-#include <main.h>
-
-/**
- * main - Entry point
- * Return: Always 0
- */
-
-int main(void)
-
-{
-
-_putcher(');
-_putcher('p');
-_putcher('u');
-_putcher('t');
-_putcher('c');
-_putcher('h');
-_putcher('a');
-_putcher('r');
-_putcher('\n');
-return (0);
-}
+#include "holberton.h" 
+ /** 
+  * main - this funtion show me in the opuput "Holberton" 
+  * 
+  * Return: Always 0. 
+  */ 
+  
+ int main(void) 
+ { 
+         _putchar('H'); 
+         _putchar('o'); 
+         _putchar('l'); 
+         _putchar('b'); 
+         _putchar('e'); 
+         _putchar('r'); 
+         _putchar('t'); 
+         _putchar('o'); 
+         _putchar('n'); 
+         _putchar('\n'); 
+         return (0); 
+ }
