@@ -1,1 +1,1 @@
-0. strcat
+more pointers, arrays and strings
