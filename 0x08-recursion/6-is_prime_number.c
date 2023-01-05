@@ -5,7 +5,7 @@
  * @n: the number being tested
  * @div: the divisor
  *
- * Description: The function finds whether the number is divisible
+ * Description: The function finds whether the numbeer is divisible
  * by 2 and return the value
  * Return: result
  */
@@ -32,7 +32,7 @@ int is_divisible(int n, int div)
  * and returns the appropriate value.
  * Return: result
  */
-int is_prime_number(int n)
+int is prime_number(int n)
 {
 	int div = 2;
 
@@ -46,5 +46,5 @@ int is_prime_number(int n)
 		return (1);
 	}
 
-	return (is _divisible(n, div));
+	return (is_divisible(n, div));
 }
