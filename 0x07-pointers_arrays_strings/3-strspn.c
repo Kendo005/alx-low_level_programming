@@ -1,29 +1,29 @@
-#include "maain.h"
+#include "main.h"
 
 /**
- * _strspn - gets the length of the profix substring.
- * @s: initial segment.
- * @accept: accepted bytes.
- * Return: the number of accepted bytes.
+ * _strpbrk - searches a string for any of a set of bytes.
+ * @s: string to be scanned
+ * @accept: string containing characters to match
+ * Description: This function finds the first character in the string s
+ * that matches any character specified in accept.
+ * This does not include terminating null-characters.
+ * Return: pointer to the byte in s that matches one of the bytes in accept
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j, bool;
+	int i, j;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		bool = 1;
-		for (j = 0; *(accept + j) != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*(s + i) == *(accept + j))
+			if (s[i] == accept[j])
 			{
-				bool = 0;
-				break;
+				return (s + i);
 			}
 		}
-		if (bool == 1)
-			break;
 	}
-	return (i);
+
+	return (0);
 }
 
