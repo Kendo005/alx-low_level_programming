@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches a string for any of a set of bytes.
+ * _strpn - searches a string for any of a set of bytes.
  * @s: string to be scanned
  * @accept: string containing characters to match
  * Description: This function finds the first character in the string s
@@ -9,7 +9,7 @@
  * This does not include terminating null-characters.
  * Return: pointer to the byte in s that matches one of the bytes in accept
  */
-char *_strpbrk(char *s, char *accept)
+char *_strpn(char *s, char *accept)
 {
 	int i, j;
 
