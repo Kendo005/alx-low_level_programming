@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc *.c -c -fPIC
-gcc *.o -o liball.so -shared
-export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH
+gcc -Wall -fPIC -c *.c
+gcc -shared -Wl,-soname,liball.so -o liball.so *.o
